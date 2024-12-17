@@ -5,5 +5,5 @@ Welcome to the NJIT Sports Blog! Built on Drupal, this platform is your go-to hu
 PROJECT LINKS
 
 - Dockerhub:
-- Figma:
+- Figma:https://www.figma.com/design/NITW6FTSqL4wq3NbAD24aS/NJIT-Sports-Site?node-id=0-1&p=f&t=6x9RTHbMuSYKLNNU-0
 - Website:

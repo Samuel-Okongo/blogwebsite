@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Website</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NJIT Sports Blog</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <h1>NJIT OFFICIAL SPORTS BLOG</h1>
+    <p class="sponsored-by">SPONSORED BY: <span class="sponsor-logo">Adidas</span></p>
+  </header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to My Website</h1>
-            <p>A showcase of my web development journey</p>
-        </section>
+  <section class="hero-section">
+    <h2>Get The Latest In NJIT Sports News</h2>
+    <p>Stay up-to-date with game schedules, player stats, and campus sports events.</p>
+    <button class="cta-button">Sign Up for Updates</button>
+    <div class="featured-logos">
+      <span>Featured on:</span>
+      <img src="espn.png" alt="ESPN">
+      <img src="sc.png" alt="Sports Center">
+      <img src="forbes.png" alt="Forbes">
+    </div>
+  </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a web developer passionate about creating meaningful digital experiences.</p>
-        </section>
+  <section class="clothing-store">
+    <div class="clothing-info">
+      <h3>Clothing Store</h3>
+      <p>Show your pride with NJIT gear</p>
+      <button class="cta-button">View Our Clothing</button>
+    </div>
+    <div class="gift-ideas">
+      <h4>Gift Ideas</h4>
+      <p>T-Shirts, Hats, Drinkware, and More</p>
+    </div>
+  </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2</p>
-                </div>
-            </div>
-        </section>
+  <section class="sports-action">
+    <h3>Catch The Latest NJIT Sports Action</h3>
+    <p>Stay updated with the latest game scores, top plays, and athlete achievements at NJIT.</p>
+    <button class="cta-button">Watch Now</button>
+  </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Get in touch at: example@email.com</p>
-        </section>
-    </main>
+  <section class="sports-field">
+    <h2>One School, One Team</h2>
+    <img src="sports-field.jpg" alt="Sports Field">
+  </section>
 
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+  <section class="upcoming-events">
+    <h3>Upcoming Events</h3>
+    <p>Come out and support NJIT!</p>
+  </section>
+
+  <footer class="footer">
+    <h4>Show Your Highlander Pride</h4>
+    <button class="cta-button">Shop Now</button>
+    <p>Join the Highlanders:</p>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Email Address">
+      <button type="submit">Submit</button>
+    </form>
+  </footer>
 </body>
 </html>

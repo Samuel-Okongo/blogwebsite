@@ -12,11 +12,16 @@ Whether you're a fan cheering from the sidelines, a player striving for greatnes
 Project Links
 
 DockerHub: [Insert Link Here]
+
 Figma Design: NJIT Sports Site Design
+
 Live Website: [Insert Link Here]
 
 
 Technologies Used
-Framework: Drupal
+
+Framework: Drupal  
+
 Design Tool: Figma
+
 Containerization: Docker

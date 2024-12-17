@@ -1,9 +1,16 @@
-NJIT SPORTS BLOG
+NJIT Sports Blog
 
-Welcome to the NJIT Sports Blog! Built on Drupal, this platform is your go-to hub for all things NJIT athletics. Stay connected with the latest game highlights, team updates, and campus sports news while celebrating the achievements of our Highlanders. Whether you're a fan, player, or sports enthusiast, there's something here for everyone!
+Welcome to the NJIT Sports Blog – your ultimate destination for everything NJIT Athletics!
 
-PROJECT LINKS
+Powered by Drupal, this platform keeps you in the loop with:
 
-- Dockerhub:
-- Figma:https://www.figma.com/design/NITW6FTSqL4wq3NbAD24aS/NJIT-Sports-Site?node-id=0-1&p=f&t=6x9RTHbMuSYKLNNU-0
-- Website:
+🏆 Game Highlights: Relive the top moments from recent matchups.
+📣 Team Updates: Stay informed about rosters, schedules, and key announcements.
+🎉 Highlander Achievements: Celebrate the hard work and success of our student-athletes.
+Whether you're a fan cheering from the sidelines, a player striving for greatness, or simply a sports enthusiast, the NJIT Sports Blog has something for you. Let’s come together to honor the spirit of our Highlanders!
+
+Project Links
+
+DockerHub: [Insert Link Here]
+Figma Design: NJIT Sports Site Design
+Live Website: [Insert Link Here]

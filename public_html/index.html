@@ -3,107 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NJIT Sports Blog</title>
+    <title>NJIT Official Sports Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="header-content">
-            <h1>NJIT OFFICIAL SPORTS BLOG</h1>
-            <nav class="top-right-nav">
-                <img src="images/highlander.png" alt="NJIT Highlander" class="logo">
-                <div class="nav-links">
-                    <a href="register.html">Sign Up</a>
-                    <a href="login.html">Login</a>
+    <div class="container-fluid px-0">
+        <header class="py-3">
+            <div class="container d-flex justify-content-end align-items-center">
+                <span class="me-2">SPONSORED BY:</span>
+                <img src="images/spons.png" alt="Adidas Logo" class="sponsor-logo" width="50">
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-4">NJIT OFFICIAL SPORTS BLOG</h1>
+                        <div class="hero-text">
+                            <h2 class="display-3 fw-bold">Get The Latest In<br>NJIT Sports News</h2>
+                            <p class="lead">Stay up-to-date with game schedules, player stats, and campus sports events</p>
+                            <button class="btn btn-primary btn-lg rounded-pill">SIGN UP FOR UPDATES</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/njit.png" alt="NJIT Campus" class="img-fluid rounded-circle">
+                    </div>
                 </div>
-            </nav>
-            <p class="sponsored-by">SPONSORED BY: <span class="sponsor-logo">Adidas</span></p>
-        </div>
-    </header>
+            </section>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h2>Get The Latest In NJIT Sports News</h2>
-            <p>Stay up-to-date with game schedules, player stats, and campus sports events.</p>
-            <a href="landing.html" class="cta-button">Sign Up for Updates</a>
-            
-            <div class="featured-logos">
-                <h3>Featured Sports</h3>
-                <div class="logo-container">
-                    <img src="images/baseball.png" alt="Baseball" class="sport-logo">
-                    <img src="images/soccer.png" alt="Soccer" class="sport-logo">
-                    <img src="images/girlsvolleyball.png" alt="Volleyball" class="sport-logo">
+            <!-- Featured Section -->
+            <section class="featured bg-dark py-4">
+                <div class="container text-center">
+                    <p class="text-light mb-4">Featured on</p>
+                    <div class="row justify-content-center align-items-center g-4">
+                        <div class="col"><img src="images/espn.png" alt="ESPN+" class="featured-logo"></div>
+                        <div class="col"><img src="images/sportscenter.png" alt="SportsCenter" class="featured-logo"></div>
+                        <div class="col"><img src="images/mit.png" alt="MIT" class="featured-logo"></div>
+                        <div class="col"><img src="images/forbes.png" alt="Forbes" class="featured-logo"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Latest Scores Section -->
-    <section class="scores-section">
-        <div class="section-content">
-            <h2>Latest Scores</h2>
-            <div class="scores-grid">
-                <img src="images/score.png" alt="Latest Score Updates" class="score-img">
-                <img src="images/nextmatch.png" alt="Next Match" class="score-img">
-            </div>
-        </div>
-    </section>
+            <!-- Store Section -->
+            <section class="store container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card shadow">
+                            <img src="images/shop.png" alt="NJIT Store" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="text-center mb-4">GIFTS IDEAS</h3>
+                                <div class="d-flex justify-content-around">
+                                    <button class="btn btn-danger">T-SHIRTS</button>
+                                    <button class="btn btn-danger">HATS</button>
+                                    <button class="btn btn-danger">DRINKWARE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div>
+                            <h2 class="display-4 fw-bold">Show Your Pride With<br>NJIT Gear</h2>
+                            <p class="lead">Check out the NJIT bookstore for a wide selection of NJIT apparel, accessories, and more!</p>
+                            <button class="btn btn-primary btn-lg rounded-pill">VIEW OUR CLOTHING</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Clothing Store Section -->
-    <section class="clothing-store">
-        <div class="store-content">
-            <div class="clothing-info">
-                <h3>Highlander Store</h3>
-                <p>Show your NJIT pride with official gear</p>
-                <img src="images/clothingstore.png" alt="NJIT Store" class="store-img">
-                <a href="#" class="cta-button">Shop Now</a>
-            </div>
-            <div class="gift-ideas">
-                <h4>Gift Ideas</h4>
-                <p>T-Shirts, Hats, Drinkware, and More</p>
-            </div>
-        </div>
-    </section>
+            <!-- Sports Updates -->
+            <section class="sports-updates container py-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <h3 class="h4">Catch The Latest NJIT Sports Action</h3>
+                        <h2 class="display-5 fw-bold">Stay Updated With The Latest Game Scores, Top Plays, And Athlete Achievements</h2>
+                        <p class="lead">Watch game recaps, view player stats, and relive the best moments from NJIT's recent games</p>
+                        <button class="btn btn-primary btn-lg rounded-pill">WATCH NOW</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/swimming.png" alt="Achievement" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </section>
 
-    <!-- Sports Field Section -->
-    <section class="sports-field">
-        <div class="field-content">
-            <h2>Home of the Highlanders</h2>
-            <div class="field-images">
-                <img src="images/field.png" alt="Sports Field" class="field-img">
-                <img src="images/crowd.png" alt="Crowd" class="crowd-img">
-            </div>
-        </div>
-    </section>
+            <!-- Field Banner -->
+            <section class="field-banner position-relative">
+                <img src="images/field.png" alt="NJIT Sports Field" class="img-fluid w-100">
+                <div class="position-absolute top-50 start-50 translate-middle text-center">
+                    <h2 class="display-3 fw-bold text-white text-shadow">ONE SCHOOL<br>ONE TEAM</h2>
+                </div>
+            </section>
 
-    <!-- Tournament Section -->
-    <section class="tournament-section">
-        <div class="tournament-content">
-            <h2>Upcoming Tournaments</h2>
-            <div class="tournament-info">
-                <img src="images/tournament.png" alt="Tournament Schedule" class="tournament-img">
-                <img src="images/map.png" alt="Venue Map" class="map-img">
-            </div>
-        </div>
-    </section>
+            <!-- Upcoming Games -->
+            <section class="container py-5">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border-0">
+                            <img src="images/nextmatch.png" alt="Next Match" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border-0">
+                            <img src="images/soccer.png" alt="Soccer Player" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border-0">
+                            <img src="images/girlsvolleyball.png" alt="Volleyball Team" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center display-4 fw-bold mt-4">COME OUT AND SUPPORT!!</h2>
+            </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <h4>Show Your Highlander Pride</h4>
-            <a href="#" class="cta-button">Join the Community</a>
-            <div class="subscribe-section">
-                <p>Stay Updated with NJIT Sports:</p>
-                <form class="subscribe-form" action="#" method="POST">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <button type="submit" class="subscribe-button">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </footer>
+            <!-- Apparel Section -->
+            <section class="container py-5">
+                <div class="card shadow-lg">
+                    <img src="images/apparel.png" alt="Highlander Apparel" class="card-img-top">
+                </div>
+            </section>
 
-    <script src="script.js"></script>
+            <!-- Footer -->
+            <footer class="bg-dark text-light py-5">
+                <div class="container">
+                    <nav class="row text-center mb-4">
+                        <div class="col-md-3"><a href="#teams" class="text-light text-decoration-none">Teams</a></div>
+                        <div class="col-md-3"><a href="#schedule" class="text-light text-decoration-none">Schedule</a></div>
+                        <div class="col-md-3"><a href="#highlights" class="text-light text-decoration-none">Highlights</a></div>
+                        <div class="col-md-3"><a href="#contact" class="text-light text-decoration-none">Contact</a></div>
+                    </nav>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center">
+                            <h3 class="h4 mb-4">JOIN THE HIGHLANDERS</h3>
+                            <form class="mb-4">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="EMAIL ADDRESS" required>
+                                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                </div>
+                            </form>
+                            <div class="social-links">
+                                <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

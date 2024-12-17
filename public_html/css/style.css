@@ -39,3 +39,247 @@ body {
 .navbar-nav .nav-link:hover::after {
   width: 80%;
 }
+
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Featured Section */
+.featured-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Store Section */
+.store-promo {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+
+.btn-primary:hover {
+  background-color: #1a252f;
+  border-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Blog Section Styles */
+.blog-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.blog-card {
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.blog-card .card-body {
+  padding: 1.5rem;
+}
+
+.blog-card .card-title {
+  color: var(--bs-primary);
+  font-weight: bold;
+}
+
+.blog-card .card-text {
+  color: #333;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+/* Field Banner */
+.field-banner {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Social Links */
+.social-links a {
+  font-size: 1.5rem;
+  transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+}
+
+footer .nav-link {
+  color: white;
+  transition: opacity 0.3s;
+}
+
+footer .nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+      min-height: auto;
+      padding: 4rem 0;
+  }
+  
+  .hero-text h2 {
+      font-size: 2.5rem;
+  }
+  
+  .navbar-nav {
+      padding: 1rem 0;
+  }
+  
+  .navbar-nav .nav-link {
+      text-align: center;
+  }
+  
+  .store-content {
+      flex-direction: column;
+  }
+  
+  .featured-logos {
+      flex-wrap: wrap;
+  }
+  
+  .featured-logo {
+      height: 30px;
+      margin: 10px;
+  }
+  
+  .blog-card {
+      margin-bottom: 1rem;
+  }
+}
+
+/* Form Styles */
+.form-control {
+  border-radius: 8px;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.25);
+  border-color: var(--bs-secondary);
+}
+
+/* Input Group */
+.input-group {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-group .form-control {
+  border-radius: 8px 0 0 8px;
+}
+
+.input-group .btn {
+  border-radius: 0 8px 8px 0;
+}
+
+/* Utility Classes */
+.rounded-circle {
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}

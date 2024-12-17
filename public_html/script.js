@@ -1,7 +1,7 @@
 async function fetchPosts() {
     const container = document.getElementById('blogContainer');
     try {
-        const response = await fetch('https://your-drupal-site.com/jsonapi/node/article');
+        const response = await fetch('https://vers1on.online');
         const data = await response.json();
 
         container.innerHTML = "";

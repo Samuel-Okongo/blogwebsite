@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Watch Live - NJIT Sports Blog</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #b14d47;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Live - NJIT Sports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/highlander.png" alt="NJIT Logo" height="40" class="me-2">
+                NJIT Sports
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#schedules">Game Schedules</a></li>
+                            <li><a class="dropdown-item" href="#stats">Team Stats</a></li>
+                            <li><a class="dropdown-item" href="#facilities">Facilities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="watchlive.html">Watch Live</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Auth Buttons -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    .container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      width: 100%;
-      max-width: 900px;
-    }
+    <!-- Main Content for Watch Live -->
+    <main class="container mt-5 pt-5">
+        <h1 class="text-center my-5">Watch Live</h1>
+        <!-- Existing content of Watch Live file remains unchanged -->
+    </main>
 
-    h1 {
-      color: #b14d47;
-      margin-bottom: 20px;
-    }
-
-    .btn-primary {
-      background-color: #333;
-      border: none;
-      transition: background 0.3s;
-    }
-
-    .btn-primary:hover {
-      background-color: #555;
-    }
-
-    .live-stream {
-      position: relative;
-      padding-top: 56.25%; /* 16:9 Aspect Ratio */
-      height: 0;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px;
-    }
-
-    .live-stream iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .upcoming-events {
-      background-color: #f8f9fa;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .event {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <nav class="row text-center mb-4">
+                <div class="col-md-3"><a href="#teams" class="text-light text-decoration-none">Teams</a></div>
+                <div class="col-md-3"><a href="#schedule" class="text-light text-decoration-none">Schedule</a></div>
 
     .event:last-child {
       border-bottom: none;
@@ -94,17 +94,51 @@
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/highlander.png" alt="NJIT Logo" height="40" class="me-2">
+        NJIT Sports
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Resources
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#schedules">Game Schedules</a></li>
+              <li><a class="dropdown-item" href="#stats">Team Stats</a></li>
+              <li><a class="dropdown-item" href="#facilities">Facilities</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="watchlive.html">Watch Live</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
     <h1>Watch NJIT Sports Live</h1>
-
-    <!-- Live Stream Section -->
     <div class="live-stream">
       <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Live Stream" frameborder="0" allowfullscreen></iframe>
     </div>
-
     <button class="cta-button">Subscribe for Live Game Alerts</button>
-
-    <!-- Upcoming Events Section -->
     <h2 class="mt-5">Upcoming Live Events</h2>
     <div class="upcoming-events mt-3">
       <div class="event">
@@ -128,12 +162,12 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <p class="text-center">&copy; 2024 NJIT Sports Blog. All rights reserved.</p>
+    </div>
+  </footer>
 
-<footer>
-    <p>Social Media Links</p>
-</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

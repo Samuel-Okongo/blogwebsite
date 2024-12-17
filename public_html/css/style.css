@@ -1,132 +1,277 @@
-/* styles.css */
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: maroon;
-    color: #f3f3f3;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #8B0000;
+  color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+  background-color: #550000;
+  padding: 20px;
+  position: relative;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.top-right-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #FFD700;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #FFC107;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #BA0021;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.featured-logos {
+  margin-top: 40px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sport-logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.sport-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Scores Section */
+.scores-section {
+  background-color: #A52A2A;
+  padding: 40px 20px;
+}
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.score-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Clothing Store Section */
+.clothing-store {
+  background-color: #7C0A02;
+  padding: 50px 20px;
+}
+
+.store-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.store-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Sports Field Section */
+.sports-field {
+  background-color: #8B0000;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.field-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.field-img, .crowd-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Tournament Section */
+.tournament-section {
+  background-color: #910000;
+  padding: 50px 20px;
+}
+
+.tournament-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tournament-img, .map-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #550000;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscribe-section {
+  margin-top: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.cta-button, .subscribe-button {
+  background-color: #FFD700;
+  color: #000000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover, .subscribe-button:hover {
+  background-color: #FFC107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-right-nav {
+      position: static;
+      justify-content: center;
+      margin-top: 20px;
   }
-  
-  .header {
-    text-align: center;
-    padding: 20px;
-    background-color: #8B0000;
+
+  .store-content {
+      flex-direction: column;
+      text-align: center;
   }
-  
-  .sponsored-by {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  
-  .hero-section {
-    text-align: center;
-    padding: 50px;
-    background-color: #BA0021;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    background-color: #FFD700;
-  
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  .cta-button:hover {
-    background-color: #FFC107;
-  }
-  
-  .featured-logos {
-    margin-top: 20px;
-  }
-  
-  .featured-logos img {
-    width: 80px;
-    margin: 0 10px;
-  }
-  
-  .clothing-store {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    background-color: #A52A2A;
-  }
-  
-  .clothing-info, .gift-ideas {
-    width: 45%;
-  }
-  
-  .clothing-info h3, .gift-ideas h4 {
-    font-size: 1.5em;
-  }
-  
-  .sports-action {
-    text-align: center;
-    padding: 40px;
-    background-color: #B22222;
-  }
-  
-  .sports-action p {
-    margin: 20px 0;
-  }
-  
-  .sports-field {
-    text-align: center;
-    padding: 50px;
-    background-color: #7C0A02;
-  }
-  
-  .sports-field img {
-    width: 80%;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-  
-  .upcoming-events {
-    text-align: center;
-    padding: 30px;
-    background-color: #8B0000;
-  }
-  
-  .upcoming-events h3 {
-    font-size: 2em;
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 40px;
-    background-color: #550000;
-  }
-  
-  .footer h4 {
-    font-size: 1.8em;
-  }
-  
+
   .subscribe-form {
-    margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
   }
-  
+
   .subscribe-form input {
-    padding: 10px;
-    width: 200px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+      width: 100%;
+      max-width: 300px;
   }
-  
-  .subscribe-form button {
-    padding: 10px 20px;
-    background-color: #FFD700;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 1.8em;
   }
-  
-  .subscribe-form button:hover {
-    background-color: #FFC107;
-  }  
+
+  .hero-section h2 {
+      font-size: 2em;
+  }
+
+  .logo-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}

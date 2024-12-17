@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: cr432/mywebsite:test
+    image: cr432/mywebsite:latest
     container_name: vers1on
     restart: always
     networks:

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NJIT Branded Clothing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .clothing-header {
+      background-color: #b14d47;
+      color: white;
+      padding: 40px 0;
+    }
+
+    .product-card {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/highlander.png" alt="NJIT Logo" height="40" class="me-2">
+        NJIT Sports
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="clothing-header text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Show Your Pride with NJIT Clothing</h1>
+      <p class="lead">Explore the official NJIT merchandise, including T-shirts, hats, and drinkware.</p>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="images/njit-shirt.png" class="card-img-top" alt="NJIT T-Shirt">
+          <div class="card-body text-center">
+            <h5 class="card-title">NJIT T-Shirt</h5>
+            <p class="card-text">$20.00</p>
+            <a href="#" class="btn btn-danger">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="images/njit-hat.png" class="card-img-top" alt="NJIT Hat">
+          <div class="card-body text-center">
+            <h5 class="card-title">NJIT Hat</h5>
+            <p class="card-text">$15.00</p>
+            <a href="#" class="btn btn-danger">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="images/njit-mug.png" class="card-img-top" alt="NJIT Drinkware">
+          <div class="card-body text-center">
+            <h5 class="card-title">NJIT Drinkware</h5>
+            <p class="card-text">$10.00</p>
+            <a href="#" class="btn btn-danger">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p class="mb-0">© 2024 NJIT Sports Blog | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

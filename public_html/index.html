@@ -7,52 +7,59 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header Section -->
   <header class="header">
-    <div class="sponsor">
-      <span>SPONSORED BY:</span>
-      <img src="assets/adidas_logo.png" alt="Adidas Logo">
-    </div>
     <h1>NJIT OFFICIAL SPORTS BLOG</h1>
-    <div class="updates-section">
-      <h2>Get The Latest In NJIT Sports News</h2>
-      <p>Stay updated with game schedules, player stats, and campus sports events.</p>
-      <button id="scrollToForm">SIGN UP FOR UPDATES</button>
-    </div>
-    <img src="assets/campus_image.png" alt="NJIT Campus" class="campus-image">
+    <p class="sponsored-by">SPONSORED BY: <span class="sponsor-logo">Adidas</span></p>
   </header>
 
-  <!-- Clothing Store -->
+  <section class="hero-section">
+    <h2>Get The Latest In NJIT Sports News</h2>
+    <p>Stay up-to-date with game schedules, player stats, and campus sports events.</p>
+    <button class="cta-button">Sign Up for Updates</button>
+    <div class="featured-logos">
+      <span>Featured on:</span>
+      <img src="images/image 10.png" alt="ESPN">
+      <img src="sc.png" alt="Sports Center">
+      <img src="forbes.png" alt="Forbes">
+    </div>
+  </section>
+
   <section class="clothing-store">
-    <h2>Clothing Store</h2>
-    <button id="showProducts">VIEW OUR CLOTHING</button>
-    <div id="products" class="hidden">
-      <p>Hoodies, Shirts, Hats, Accessories!</p>
+    <div class="clothing-info">
+      <h3>Clothing Store</h3>
+      <p>Show your pride with NJIT gear</p>
+      <button class="cta-button">View Our Clothing</button>
+    </div>
+    <div class="gift-ideas">
+      <h4>Gift Ideas</h4>
+      <p>T-Shirts, Hats, Drinkware, and More</p>
     </div>
   </section>
 
-  <!-- Events Slider -->
-  <section class="events">
-    <h2>COME OUT AND SUPPORT!!</h2>
-    <div class="slider">
-      <div class="slides">
-        <img src="assets/event1.png" alt="Event 1">
-        <img src="assets/event2.png" alt="Event 2">
-        <img src="assets/event3.png" alt="Event 3">
-      </div>
-    </div>
+  <section class="sports-action">
+    <h3>Catch The Latest NJIT Sports Action</h3>
+    <p>Stay updated with the latest game scores, top plays, and athlete achievements at NJIT.</p>
+    <button class="cta-button">Watch Now</button>
   </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <form id="emailForm">
-      <label for="email">JOIN THE HIGHLANDERS</label>
-      <input type="email" id="email" placeholder="Email Address" required>
-      <button type="submit">SUBMIT</button>
-      <p id="formMessage"></p>
+  <section class="sports-field">
+    <h2>One School, One Team</h2>
+    <img src="sports-field.jpg" alt="Sports Field">
+  </section>
+
+  <section class="upcoming-events">
+    <h3>Upcoming Events</h3>
+    <p>Come out and support NJIT!</p>
+  </section>
+
+  <footer class="footer">
+    <h4>Show Your Highlander Pride</h4>
+    <button class="cta-button">Shop Now</button>
+    <p>Join the Highlanders:</p>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Email Address">
+      <button type="submit">Submit</button>
     </form>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -16,12 +16,3 @@ DockerHub: [Insert Link Here]
 Figma Design: NJIT Sports Site Design
 
 Live Website: [Insert Link Here]
-
-
-Technologies Used
-
-Framework: Drupal  
-
-Design Tool: Figma
-
-Containerization: Docker
